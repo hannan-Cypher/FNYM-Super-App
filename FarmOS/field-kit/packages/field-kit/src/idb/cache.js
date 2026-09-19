@@ -24,7 +24,7 @@ export const cachingCriteria = (options = {}) => {
   const { now = Date.now(), uid = getUid() } = options;
   return {
     asset: {
-      status: 'active',
+      archived: null,
     },
     log: {
       timestamp: {

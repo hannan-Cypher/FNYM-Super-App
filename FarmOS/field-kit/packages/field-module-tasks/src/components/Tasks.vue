@@ -16,7 +16,7 @@ export default {
       append, checkout, commit, link, revise,
     } = useEntities();
 
-    const assetFilter = { status: 'active' };
+    const assetFilter = { archived: null };
     const assets = checkout('asset', assetFilter);
     const locations = computed(() => assets.filter(a => a.is_location));
     const equipment = computed(() => assets.filter(a => a.type === 'asset--equipment'));
