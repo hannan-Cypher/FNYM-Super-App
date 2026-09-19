@@ -1,0 +1,3 @@
+[submodule "FarmOS/farmOS/www"]
+	path = FarmOS/farmOS/www
+	url = https://github.com/farmOS/composer-project.git
